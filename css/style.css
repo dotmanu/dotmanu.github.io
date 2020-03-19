@@ -1,0 +1,274 @@
+
+h1 { 
+    font-family: Futura, Trebuchet MS, Arial, sans-serif; 
+    font-size: 24px; 
+    font-style: normal; 
+    font-variant: normal; 
+    text-shadow: 2px 2px #000;
+    font-weight: 700; 
+    line-height: 26.4px; 
+    color: #fff;
+} 
+
+h3 { 
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
+    font-size: 14px; font-style: normal;
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 15.4px; 
+    color: #fff;
+} 
+
+p { 
+    font-family: Futura, Trebuchet MS, Arial, sans-serif; 
+    font-size: 14px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 20px; 
+    color: #fff;
+    text-align:justify;
+} 
+
+
+a:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    text-decoration: none;
+}
+
+a:active {
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    text-decoration: none;
+}
+
+.side {
+    height: 105%;
+    width: 37%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #272727;
+    padding-top: 20px;
+}
+
+.interlude {
+    margin-left: 37%;
+    height: 100%;
+    width: 3%;
+    top: 0;
+    position: fixed;
+    background-image: url(../img/hash.jpg);
+    background-position: center;
+    background-repeat: repeat-y;
+}
+
+.map {
+    width: 60%;
+    height: 100%;
+}
+
+.mapmob {
+    width: 100%;
+    height: 100%;
+}
+
+#inside {
+    display: none;
+    position:fixed;
+    margin-left: 40%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+iframe#gform {
+    margin-left:15%;
+    margin-top:12%;
+    top:-40px; 
+    position:fixed; 
+    z-index:9;
+}
+
+iframe#gform-mob {
+    margin-right:20%;
+    margin-top:40%;
+    position:fixed; 
+    z-index:9;
+}
+
+iframe#map{
+    position:fixed; 
+    margin-left:40%; 
+    top:-46px; 
+    border:none;
+    z-index:1;
+}
+
+iframe#mapmob{
+    position:fixed; 
+    margin-left:-8px;
+    top:-46px; 
+    border:none;
+    z-index:1;
+}
+
+img#button{
+    margin-left:43%;
+    margin-top:49%;
+    position: absolute;
+    z-index:9;
+}
+
+img#leave{
+    margin-left:60%;
+    margin-top:4%;
+    position: absolute;
+    z-index:9;
+}
+
+img#leavemob{
+    margin-left:7%;
+    margin-top:4%;
+    position: absolute;
+    z-index:9;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.contact {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin-top: 30px;
+}
+
+.content {
+    margin-left: 10%; 
+    margin-right: 10%; 
+    position: relative;
+}
+
+.top {
+    height: 50%;
+}
+
+.bottom {
+    height: 50%;
+}
+
+@media only screen and (max-width: 1600px) {
+    .checkmap{
+        display: none;
+    }
+    .side{
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .side{
+        height: 112%;
+    }
+    .checkmap{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .side{
+        height: 140%;
+    }
+    .logo img {
+        width: 110%;
+    }
+    .interlude{
+        background-size: 100%;
+    }
+    .map-mobile{
+        display: none;
+    }
+    .checkmap{
+        display: none;
+    }
+    img#button{
+        margin-left:43%;
+        margin-top:59%;
+        position: absolute;
+        z-index:9;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .side{
+        width: 100%;
+        height: 140%;
+    }
+    .interlude{
+        display: none;
+    }
+    .map{
+        display: none;
+    }
+    .logo img {
+        width: 100%;
+    }
+    .checkmap{
+        display: inline;
+    }
+} 
+
+@media only screen and (max-width: 750px) {
+    .side{
+        width: 100%;
+        height: 120%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .side{
+        width: 100%;
+        height: 130%;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .side{
+        width: 100%;
+        height: 180%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .side{
+        width: 100%;
+        height: 260%;
+    }
+}
+
+
+
+
+
+

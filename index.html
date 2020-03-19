@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Un monumento digital a los fallecidos por coronavirus en España durante la pandemia de 2020">
+  <meta name="keywords" content="memorial, coronavirus, covid-19, españa, fallecidos">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta property="og:title" content="Memorial 2020 - Un monumento digital a los fallecidos en por coronavirus" />
+  <meta property="og:url" content=" http://memorial2020.es" />
+  <meta property="og:description" content="Un monumento digital a los fallecidos por coronavirus en España durante la epidemia de 2020" />
+  <meta property="og:image" content="http://freethatbook.com/img/socials.jpg" />
+  <link rel="apple-touch-icon" href="../../img/faviconjourno.png">
+  <link rel="icon" href="../../img/faviconjourno.png">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>
+    Memorial 2020 - Un monumento digital a los fallecidos por coronavirus
+  </title>
+</head>
+<body>
+
+        <div class="side">
+            <div class="logo">
+                <center><img src="img/logo.png" width="300">
+            </div> 
+
+
+            <div class="content">
+                    <center><div class="checkmap">
+                            <a href="map-mobile.html"><img src="img/mapa.png" width="100"></a>
+                            <a href="form-mobile.html"><img src="img/send.png" width="100"></a>
+                        </div></center>
+            </div>
+
+            <div class="content" id="language">
+
+                <p>La irreparable pandemia de coronavirus nos ha obligado a despedirnos de familiares y amigos antes de tiempo. Este memorial o monumento digital pretende servir de espacio para todos aquellos que deseen contar las historias de quienes nos han dejado. Para que no caigan en el olvido de las cifras y las gráficas.</p>
+                <h1>Envío de la historia</h1>
+                <p>Utiliza el formulario para mandarnos la historia. Si prefieres utilizar las iniciales o un seudónimo para el fallecido, puedes hacerlo.</p>
+                <h1>Revisión y publicación</h1>
+                <p>Una vez revisada, incluiremos la historia como un punto en el mapa. Asegúrate de incluir un email de contacto, nos pondremos en contacto contigo en caso de que sea necesario confirmar algún dato.</p>
+                <h1>Sobre el memorial</h1>
+                <p>El memorial es una iniciativa libre; permanecerá online, puedes compartirlo y visitarlo siempre que quieras.</p>
+            </div>
+            <div class="contact">
+                    <center><a href="mailto:memoria2020.es@gmail.com"><img src="img/mail.png" width="43"></a> </center>
+                
+                
+
+            </div>
+            
+        </div>    
+        <div class="interlude"></div>
+<div class="map">
+
+        <div id="inside">
+            <iframe id="gform" src="https://docs.google.com/forms/d/e/1FAIpQLSeUkiI6YHTPk2tBhVtihPQ8nRfo_FfldyVzyGeelFmOKX-ZGw/viewform?embedded=true" width="440" height="490" frameborder="0" marginheight="0" marginwidth="0">...</iframe>
+        </div>
+        <iframe id="map"  src="https://www.google.com/maps/d/u/0/embed?mid=1JGG49aemfAOFtVDhHD1PS85XJHJGa_hw" width="100%" height="150%"></iframe>
+       
+        <a href="#" onclick="msg()"><img id="button" data-value="1" src="img/enviar.png" width="200" /></a>
+</div>
+    
+
+       
+
+        </body>
+
+        <script>
+
+        function msg() {
+            if(document.getElementById("button").getAttribute("data-value") == '1'){
+                document.getElementById("button").src = "img/map.png";
+                document.getElementById("button").setAttribute("data-value", "0");
+                document.getElementById("map").style.display = "none";
+                document.getElementById("inside").style.display = "block";
+                document.getElementById("inside").style.backgroundImage = "url(img/back.jpg)";
+                document.getElementById("inside").style.backgroundSize = "cover";
+                document.getElementById("inside").style.backgroundRepeat = "no-repeat";
+                document.getElementById("inside").style.display = "block";
+            }
+            else if(document.getElementById("button").getAttribute("data-value") == '0'){
+                document.getElementById("button").src = "img/enviar.png";
+                document.getElementById("button").setAttribute("data-value", "1");
+                document.getElementById("map").style.display = "inline";
+                document.getElementById("form").style.display = "none";
+            }
+        }
+
+            </script>
